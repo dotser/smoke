@@ -1,0 +1,20 @@
+language: php
+
+php:
+- 5.4
+- 5.5
+- 5.6
+
+before_script:
+- composer self-update
+- composer install --no-interaction --no-dev
+
+script:
+- ant php:lint docs:compile
+- phpunit --coverage-text
+
+notifications:
+  slack:
+    rooms:
+    - { secure: lF/x8eG+boJyv6Gap4lGsH4ucgxyC+LD2HpnRLkFZAbmT5RRk25i2akCY2K4jnyhlwXJludFvvCF8ru4X4ZrbzAQ6dlj2tjoAvUq/zTdK/8fAtjQjzjRYDlDNbQJueAN05qz1uENMIExxyvx9MgbJUgJebZ612YmJuzIhHI8TEs= }
+    # on_success: never

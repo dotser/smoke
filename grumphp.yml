@@ -1,0 +1,8 @@
+parameters:
+  bin_dir: "./vendor/bin"
+  git_dir: "."
+  tasks:
+    phpcs:
+      standard: "./phpcs.xml"
+    phpspec: ~
+    phpunit: ~

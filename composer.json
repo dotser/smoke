@@ -1,0 +1,24 @@
+{
+  "name": "dotser/php-smoke",
+  "description": "Boilerplate for PHP libraries",
+  "keywords": [
+    "php",
+    "library",
+    "boilerplate"
+  ],
+  "require": {
+    "php": ">=5.4"
+  },
+  "require-dev": {
+    "phpro/grumphp": "*",
+    "phpunit/phpunit": "4.*",
+    "phpdocumentor/phpdocumentor": "2.*",
+    "phpspec/phpspec": "~2.0",
+    "squizlabs/php_codesniffer": "2.*"
+  },
+  "autoload": {
+    "psr-0": {
+      "Smoke": "src"
+    }
+  }
+}
